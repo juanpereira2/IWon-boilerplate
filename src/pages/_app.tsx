@@ -1,6 +1,6 @@
-import { AppProps } from 'next/app';
-import Head from 'next/head';
-import GlobalStyles from '../../styles/global'
+import { AppProps } from 'next/app'
+import Head from 'next/head'
+import GlobalStyles from '../styles/global'
 
 function App({ Component, pageProps }: AppProps) {
     return (
@@ -13,15 +13,11 @@ function App({ Component, pageProps }: AppProps) {
                     name="description"
                     content="A simple project with started with react,next,syled components"
                 />
-
             </Head>
             <GlobalStyles />
             <Component {...pageProps} />
-
         </>
     )
 }
-
-
 
 export default App

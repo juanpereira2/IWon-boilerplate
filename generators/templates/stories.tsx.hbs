@@ -1,0 +1,14 @@
+import { Story, Meta } from '@storybook/react/types-6-0'
+import {{pascalCase name}} from '.'
+
+export default {
+title: '{{pascalCase name}}',
+component: {{pascalCase name}},
+args: {
+title: "title padrao",
+description: "description padrao"
+}
+} as Meta
+
+export const Basic: Story = (args) =>
+<{{pascalCase name}} />
